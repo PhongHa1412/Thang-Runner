@@ -680,6 +680,7 @@
             if (e.target != this.detailsButton) {
                 if (!this.crashed && (Runner.keycodes.JUMP[e.keyCode] ||
                     e.type == Runner.events.TOUCHSTART)) {
+                    e.type == Runner.events.MOUSEDOWN)) {
                     if (!this.playing) {
                         this.loadSounds();
                         this.playing = true;
